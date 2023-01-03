@@ -4,14 +4,14 @@
     height: 350px;
 }
 .topmain {
-    background: rgb(225, 230, 255);
+    background: rgb(248, 248, 248);
 }
 
 .name {
     padding-top: 100px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:monospace;
     text-align: center;
-    color: white;
+    color: rgb(231, 229, 229);
     font-size: 70px;
     font-weight: bolder;
 
@@ -22,22 +22,24 @@
     font-weight: bolder;
 }
 .avatar {
-    padding-top: 20px;
+    padding-top: 50px;
     width: 20%;
     margin: auto;
 }
 .avatar>img {
     border-radius: 50%;
+    border: 1px solid gainsboro;
 }
 
 .avatar_title {
-    padding-top: 10px;
-    width: 43%;
+    padding-top: 30px;
+    width: 53%;
+    font-size: medium;
     margin: auto;
-    font-weight: bolder;
     text-align: center;
-    color: rgb(54, 54, 54);
+    color: rgb(92, 92, 92);
 }
+
 
 @media (min-width: 630px) and (max-width: 750px){
     .name {

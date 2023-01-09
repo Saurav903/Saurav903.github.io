@@ -1,3 +1,4 @@
+
 .App {
     background: rgb(39,122,176);
     background: linear-gradient(90deg, rgba(39,122,176,1) 0%, rgba(37,37,210,1) 35%, rgba(37,184,214,1) 100%);
@@ -29,6 +30,7 @@
 .avatar>img {
     border-radius: 50%;
     border: 1px solid gainsboro;
+    width: 100%;
 }
 
 .avatar_title {
@@ -44,14 +46,19 @@
 @media (min-width: 630px) and (max-width: 750px){
     .name {
         padding-top: 120px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family:monospace;
         text-align: center;
         color: white;
         font-size: 70px;
         font-weight: bolder;
     
     }
-    
+    .avatar{
+        width: 50%;
+    }
+    .avatar_title{
+        width: 80%;
+    }
     .h3top {
         font-size: 50px;
         font-weight: bolder;
@@ -60,14 +67,19 @@
 @media (min-width: 308px) and (max-width: 629px){
     .name {
         padding-top: 120px;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family:monospace;
         text-align: center;
         color: white;
         font-size: 40px;
         font-weight: bold;
     
     }
-    
+    .avatar{
+        width: 70%;
+    }
+    .avatar_title{
+        width: 100%;
+    }
     .h3top {
         font-size: 30px;
         font-weight: bold;

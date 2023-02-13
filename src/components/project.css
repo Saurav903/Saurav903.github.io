@@ -1,0 +1,8 @@
+@media (min-width: 308px) and (max-width: 680px){
+    #but>a>button{
+       font-size: 12px;
+    }
+    #protext{
+        font-size: 12px;
+    }
+}

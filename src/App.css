@@ -1,18 +1,27 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 .App {
-    background: rgb(39,122,176);
-    background: linear-gradient(90deg, rgba(39,122,176,1) 0%, rgba(37,37,210,1) 35%, rgba(37,184,214,1) 100%);
+    /* background: rgb(39,122,176);
+    background: linear-gradient(90deg, rgba(39,122,176,1) 0%, rgba(37,37,210,1) 35%, rgba(37,184,214,1) 100%); */
+    background: rgb(30,88,186);
+    background: linear-gradient(90deg, rgba(30,88,186,1) 0%, rgba(54,74,245,1) 35%, rgba(0,56,122,1) 100%);
     height: 350px;
 }
 .topmain {
-    background: rgb(248, 248, 248);
+    /* background: rgb(248, 248, 248); */
+    /* background: rgb(75,131,227);
+    background: linear-gradient(90deg, rgba(75,131,227,1) 0%, rgba(54,74,245,1) 35%, rgba(62,186,210,1) 100%); */
+    background: rgb(30,88,186);
+    background: linear-gradient(90deg, rgba(30,88,186,1) 0%, rgba(54,74,245,1) 35%, rgba(0,56,122,1) 100%);
+    padding-top: 50px;
 }
 
 .name {
     padding-top: 100px;
     font-family:monospace;
     text-align: center;
-    color: rgb(231, 229, 229);
+    color: rgb(252, 251, 251);
     font-size: 70px;
     font-weight: bolder;
 
@@ -23,14 +32,15 @@
     font-weight: bolder;
 }
 .avatar {
-    padding-top: 50px;
+    padding-top: 30px;
     width: 20%;
     margin: auto;
 }
 .avatar>img {
-    border-radius: 50%;
-    border: 1px solid gainsboro;
+    border-radius: 15%;
+    border: 1px solid rgb(179, 178, 178);
     width: 100%;
+    z-index: -1;
 }
 
 .avatar_title {
@@ -39,9 +49,13 @@
     font-size: medium;
     margin: auto;
     text-align: center;
-    color: rgb(92, 92, 92);
+    color: white;
+    font-weight: 600;
 }
-
+#resumeNew:hover{
+    background-color: white;
+    color: #02054B;
+}
 
 @media (min-width: 630px) and (max-width: 750px){
     .name {
@@ -65,6 +79,9 @@
     }
 }
 @media (min-width: 308px) and (max-width: 629px){
+    .topmain{
+        padding-top: 150px;
+    }
     .name {
         padding-top: 120px;
         font-family:monospace;
@@ -87,4 +104,5 @@
     .App {
         height: 250px;
     }
+    
 }

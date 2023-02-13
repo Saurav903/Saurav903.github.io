@@ -1,5 +1,12 @@
 .tech_main{
     margin-top: 50px;
     font-family:monospace;
-    color: rgb(66, 66, 66);
+    color: rgb(247, 243, 243);
+}
+
+@media (min-width: 308px) and (max-width: 680px){
+    #cardskill{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

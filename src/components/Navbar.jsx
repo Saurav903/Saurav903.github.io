@@ -60,9 +60,18 @@ export default function Navbar() {
               as={'nav'}
               spacing={9}
               display={{ base: 'none',md:"none", lg: 'flex' }} fontSize="20px">
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <a href={link.sc} style={{fontWeight:"bold"}}><NavLink key={link}>{link.li}</NavLink></a>
-              ))}
+              ))} */}
+              <a href={"#home"} style={{fontWeight:"bold"}}><NavLink key={"home"}>{"Home"}</NavLink></a>
+              <a href={"#abt"} style={{fontWeight:"bold"}}><NavLink key={"about"}>{"About Me"}</NavLink></a>
+              <a href={"#skil"} style={{fontWeight:"bold"}}><NavLink key={"skills"}>{"Skills"}</NavLink></a>
+              <a href={"#proj"} style={{fontWeight:"bold"}}><NavLink key={"project"}>{"Projects"}</NavLink></a>
+              <a href={"#cont"} style={{fontWeight:"bold"}}><NavLink key={"contact"}>{"Contact"}</NavLink></a>
+              <a href={Pdf} style={{fontWeight:"bold"}} download onClick={()=>{
+              let url="https://drive.google.com/file/d/1u7D7vobQ5oDAcB0wWIzjTYTPoRmBRHTu/view?usp=share_link"
+              window.open(url,"_blank");
+            }}><NavLink key={"resu"}>Resume</NavLink></a>
               {/* <NavLink fontSize="20px" ><a href={"#newResumeid"} style={{fontWeight:"bold"}}>Resume</a></NavLink> */}
             </HStack>
           </HStack>
@@ -71,9 +80,18 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ lg: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
+              {/* {Links.map((link) => (
                 <a href={link.sc}><NavLink key={link}>{link.li}</NavLink></a>
-              ))}
+              ))} */}
+              <a href={"#home"} style={{fontWeight:"bold"}}><NavLink key={"home"}>{"Home"}</NavLink></a>
+              <a href={"#abt"} style={{fontWeight:"bold"}}><NavLink key={"about"}>{"About Me"}</NavLink></a>
+              <a href={"#skil"} style={{fontWeight:"bold"}}><NavLink key={"skills"}>{"Skills"}</NavLink></a>
+              <a href={"#proj"} style={{fontWeight:"bold"}}><NavLink key={"project"}>{"Projects"}</NavLink></a>
+              <a href={"#cont"} style={{fontWeight:"bold"}}><NavLink key={"contact"}>{"Contact"}</NavLink></a>
+              <a href={Pdf} style={{fontWeight:"bold"}} download onClick={()=>{
+              let url="https://drive.google.com/file/d/1u7D7vobQ5oDAcB0wWIzjTYTPoRmBRHTu/view?usp=share_link"
+              window.open(url,"_blank");
+            }}><NavLink key={"resu"}>Resume</NavLink></a>
             </Stack>
           </Box>
         ) : null}
